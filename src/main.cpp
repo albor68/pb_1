@@ -1,29 +1,71 @@
-//==============================================================================
-///
-/// @file
-/// @brief Программа для робота Карела и стартовая функция
-///
-//==============================================================================
+
+
+
 
 
 #include "karel.h"
 
 
-//==============================================================================
-/// Программа для робота Карела
-///
 void KarelProgram() {
-/// @todo Добавить программу для Карела
+    Move();
+    Move();
+    Move();
+    TurnLeft();
+    TurnLeft();
+    TurnLeft();
+    Move();
+    Move();
+    Move();
+    TurnLeft();
+    PickBeeper();
 
+    TurnLeft();
+    TurnLeft();
+    TurnLeft();
+    Move();
+    Move();
+    Move();
+    TurnLeft();
+    Move();
+    Move();
+    Move();
+    PickBeeper();
+
+    Move();
+    TurnLeft();
+    TurnLeft();
+    TurnLeft();
+    Move();
+    TurnLeft();
+
+    Move();
+    TurnLeft();
+    TurnLeft();
+    TurnLeft();
+    Move();
+    TurnLeft();
+
+    Move();
+    TurnLeft();
+    TurnLeft();
+    TurnLeft();
+    Move();
+    TurnLeft();
+
+    Move();
+    TurnLeft();
+    TurnLeft();
+    TurnLeft();
+    Move();
+    TurnLeft();
+ 
 }
 
 
-//==============================================================================
-/// Стартовая функция
-///
 int main() {
     LoadWorld("worlds/collect_newspaper.w");
     KarelProgram();
     Finish();
     return 0;
 }
+
