@@ -14,6 +14,9 @@
 ///
 void KarelProgram() {
 /// @todo Добавить программу для Карела
+// if(FrontIsClear()) Move();
+
+// if(BeepersPresent()) PickBeeper();
 
 }
 
@@ -22,7 +25,7 @@ void KarelProgram() {
 /// Стартовая функция
 ///
 int main() {
-    LoadWorld("worlds/collect_newspaper.w");
+    LoadWorld("worlds/CB_01.w");
     KarelProgram();
     Finish();
     return 0;
